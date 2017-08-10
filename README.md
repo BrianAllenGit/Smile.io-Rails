@@ -1,6 +1,6 @@
 # Smile.io project
 
-This is small Rails 5.1.3 backend. Make sure you have this specific version of Rails before continuing. You can find the companion Ember app here [https://github.com/BrianAllenGit/Smile.io-ember](https://github.com/BrianAllenGit/Smile.io-ember)
+This is small Rails 5.1.3 backend using Ruby 2.4.0. Make sure you have these specific versions of Rails and Ruby before continuing. You can find the companion Ember app here [https://github.com/BrianAllenGit/Smile.io-ember](https://github.com/BrianAllenGit/Smile.io-ember)
 
 
 # Quick and dirty install:
@@ -10,7 +10,9 @@ git clone https://github.com/BrianAllenGit/Smile.io-rails.git
 ```
   - navigate into the newly created directory. From there, we will initialize and start the Rails server
 ```
-cd bookstore-api/
+cd Smile.io-Rails/
+git checkout profile-image-capability
+rvm use ruby 2.4.0
 bundle install
 rails db:migrate
 rails db:seed
