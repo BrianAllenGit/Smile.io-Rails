@@ -13,6 +13,7 @@ git clone https://github.com/BrianAllenGit/Smile.io-rails.git
 cd bookstore-api/
 rails db:migrate
 rails db:seed
+rake import_images:generate_profile_pictures
 rails server --binding 0.0.0.0
 ```
 And we're up and running!
